@@ -1,34 +1,37 @@
-*,*::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-    Font-family: Arial, sans-serif;
-}
-body{
     font-family: Arial, sans-serif;
+}
+
+body {
     background-color: #459eb1;
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #container {
-    width: 800px;
-    margin: 80px auto;
+    width: min(800px, 90%);
     text-align: center;
     background-color: #f0f0f0;
-    padding: 10px;
+    padding: 2rem;
     border-radius: 5px;
     box-shadow: 0 0 10px 2px;
 }
+
 #character-buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin-top: 20px;
 }
+
 #character-buttons button {
     padding: 5px 10px;
     font-size: 16px;
@@ -39,6 +42,7 @@ body{
     color: white;
     outline: none;
 }
+
 #character-buttons button:hover {
     background-color: #0e0310;
 }
