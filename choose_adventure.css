@@ -5,7 +5,12 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
+/*images for the characters*/
+img {
+    width: 400px; /* Sets the width of the image. */
+    height: auto; /* Maintains the image's aspect ratio. */
+    margin-bottom: 20px; /* Adds space below the image. */
+}
 /* Styles the entire page and centers the game vertically and horizontally. */
 body {
     background-color: #459eb1; /* Sets the page background color. */
