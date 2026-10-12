@@ -20,7 +20,7 @@
 
 {Make a list of websites that you found helpful in this project}
 
-- [Web Site Name](http://url.link.goes.here)
+- [Web Site Name](https://github.com/kevin578/text-based-adventure-video/blob/main/main.js)
 - [Web Site Name](https://www.youtube.com/watch?v=R1S_NhKkvGA)
 
 # Future Work
