@@ -81,6 +81,9 @@ button{
       justify-content: center;
       gap:20px;
       flex-wrap: wrap;
+      background-color: beige;
+      padding:10px;
+      cursor:pointer;
 }
 
 /* 7. Add a hover style
