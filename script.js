@@ -18,3 +18,8 @@ const character_two ={
 }
 const heading =document.getElementById("character_choice");
 const choicesContainer = document.getElementById("choices");
+let currentScene="start";
+
+const story ={
+    
+}
