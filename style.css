@@ -38,6 +38,10 @@ h1{
 #character_choice {
     font-size: 24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: azure;
+    border-radius: 20px;
+    padding: 15px;
+
 }
 
 /* 4. Style the story text
