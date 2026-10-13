@@ -3,6 +3,9 @@
       - Set the font
       - Center the game on the page
 */
+body{
+      background-color: rgb(173, 226, 241);
+}
 
 /* 2. Style the main game container
       - Set a maximum width
@@ -20,11 +23,21 @@
       - Put the story inside a rounded bubble
 */
 
+
 /* 5. Style the character images
       - Make both pictures the same size
       - Center the pictures
 */
-
+img{
+      width: 250px;
+      height:250px;
+}
+button{
+      border-radius: 20px;
+      font-size: 22px;
+      display: flex;
+      flex-direction: column;
+}
 /* 6. Style the choice buttons
       - Give buttons rounded corners
       - Add spacing between buttons
@@ -39,7 +52,3 @@
       - Give it a rounded shape
       - Make it easy to find
 */
-img{
-      width: 250px;
-      height:250px;
-}
