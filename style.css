@@ -62,6 +62,11 @@ button{
       - Add spacing between buttons
       - Center the buttons
 */
+.choices{
+      display: flex;
+      justify-content: center;
+      gap:20px;
+}
 
 /* 7. Add a hover style
       - Change the button color when the mouse moves over it
