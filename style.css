@@ -81,7 +81,7 @@ button{
       justify-content: center;
       gap:20px;
       flex-wrap: wrap;
-      background-color: beige;
+      background-color: rgb(220, 245, 244);
       padding:10px;
       cursor:pointer;
       gap:10px;
