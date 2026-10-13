@@ -5,6 +5,10 @@
 */
 body{
       background-color: rgb(173, 226, 241);
+      margin:0;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
 }
 
 /* 2. Style the main game container
@@ -12,11 +16,23 @@ body{
       - Add spacing
       - Give the game a rounded bubble shape
 */
+.adventure-container{
+      max-width: 800px;
+      margin:auto;
+      padding:30px;
+      background-color: white;
+      border-radius: 25%;
+      text-align: center;
+}
 
 /* 3. Style the heading
       - Adjust the text size
       - Center the title
 */
+h1{
+      font-size: 36px;
+
+}
 
 /* 4. Style the story text
       - Make the text easy to read
@@ -37,6 +53,7 @@ button{
       font-size: 22px;
       display: flex;
       flex-direction: column;
+      align-items: center;
 }
 /* 6. Style the choice buttons
       - Give buttons rounded corners
