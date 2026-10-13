@@ -32,8 +32,12 @@ body{
 h1{
       font-size: 36px;
       text-align: center;
-      margin:20%;
+      margin:20px;
 
+}
+#character_choice {
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* 4. Style the story text
@@ -49,6 +53,11 @@ h1{
 img{
       width: 250px;
       height:250px;
+}
+.game-sign{
+      width: 500px;
+      height:auto;
+      max-width: 100%;
 }
 button{
       border-radius: 20px;
@@ -66,6 +75,7 @@ button{
       display: flex;
       justify-content: center;
       gap:20px;
+      flex-wrap: wrap;
 }
 
 /* 7. Add a hover style
