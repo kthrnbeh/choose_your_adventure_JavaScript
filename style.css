@@ -57,6 +57,7 @@ h1{
 img{
       width: 250px;
       height:250px;
+      object-fit: cover;
 }
 .game-sign{
       width: 500px;
