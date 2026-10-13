@@ -1,33 +1,43 @@
 /* 1. Style the entire page
-      - Choose a background color
+      - Choose a blue background color
       - Set the font
-      - Center the game
+      - Center the game on the page
 */
 
 /* 2. Style the main game container
       - Set a maximum width
       - Add spacing
-      - Add a background and border
+      - Give the game a rounded bubble shape
 */
 
 /* 3. Style the heading
-      - Adjust size
+      - Adjust the text size
       - Center the title
 */
 
 /* 4. Style the story text
-      - Improve readability
-      - Add spacing between the story and choices
+      - Make the text easy to read
+      - Put the story inside a rounded bubble
 */
 
-/* 5. Style the choice buttons
-      - Make them easy to see
-      - Add padding and spacing
-      - Make the cursor change when hovering
+/* 5. Style the character images
+      - Make both pictures the same size
+      - Center the pictures
 */
 
-/* 6. Add a hover style
-      - Change the button color when the player moves over it
+/* 6. Style the choice buttons
+      - Give buttons rounded corners
+      - Add spacing between buttons
+      - Center the buttons
+*/
+
+/* 7. Add a hover style
+      - Change the button color when the mouse moves over it
+*/
+
+/* 8. Style the restart button
+      - Give it a rounded shape
+      - Make it easy to find
 */
 img{
       width: 250px;
