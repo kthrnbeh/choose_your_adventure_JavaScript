@@ -29,3 +29,7 @@
 /* 6. Add a hover style
       - Change the button color when the player moves over it
 */
+img{
+      width: 250px;
+      height:250px;
+}
