@@ -90,7 +90,9 @@ button{
 /* 7. Add a hover style
       - Change the button color when the mouse moves over it
 */
-
+button:hover {
+    background-color: lightpink;
+}
 /* 8. Style the restart button
       - Give it a rounded shape
       - Make it easy to find
