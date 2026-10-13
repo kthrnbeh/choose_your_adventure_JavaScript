@@ -18,6 +18,8 @@ const character_two ={
 }
 const heading =document.getElementById("character_choice");
 const choicesContainer = document.getElementById("choices");
+const choices = document.getElementById("tree");
+const choices=document.getElementById("snowman");
 
 button.addEventListener("click", function() {
     // Instructions go here when the button is clicked.
