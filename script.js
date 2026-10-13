@@ -5,10 +5,14 @@
 const character_one ={
     name: "SnowMan",
     color: "white",
-    season:"winter",   
+    season:"winter",
+    story:"Once there was a snowman...",
+    choices: ["follow the song", "Give him a magic scarf"]
 }
 const character_two ={
     name: "PopcornTree",
     color:"brown",
-    season:"spring"
+    season:"spring",
+    story:"You look out your window...",
+    choices:["follow the song", "Go to your room."]
 }
