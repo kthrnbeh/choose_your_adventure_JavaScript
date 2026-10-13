@@ -16,3 +16,4 @@ const character_two ={
     story:"You look out your window...",
     choices:["follow the song", "Go to your room."]
 }
+const heading =document.getElementById();
