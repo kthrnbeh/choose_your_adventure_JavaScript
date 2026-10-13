@@ -84,6 +84,7 @@ button{
       background-color: beige;
       padding:10px;
       cursor:pointer;
+      gap:10px;
 }
 
 /* 7. Add a hover style
