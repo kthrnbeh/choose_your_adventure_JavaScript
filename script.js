@@ -78,9 +78,6 @@ PopcornTreeButton.addEventListener("click", function() {
 const scenes = {
     snowMan: character_one,
     popcornTree: character_two,
-    const scenes = {
-    snowMan: character_one,
-    popcornTree: character_two,
 
     magicScarf: {
         story: "As the snowman received the blue scarf, magic came upon him.",
