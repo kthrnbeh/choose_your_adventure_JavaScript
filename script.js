@@ -35,7 +35,7 @@ const snowManButton=document.getElementById("snowman");
 function restartGame() {
 
     // Change the question back to "Pick your Character".
-     heading.textContent ="Let the adventure begin!
+     heading.textContent ="Let the adventure begin!";
     // Remove the current adventure choice buttons.
     choicesContainer.innerHTML = "";
 
