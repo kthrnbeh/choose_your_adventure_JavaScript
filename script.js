@@ -26,7 +26,12 @@ const snowManButton=document.getElementById("snowman");
 //    - Change the story text to the Snowman's story
 //    - Listen for a click on the Popcorn Tree button
 //    - Change the story text to the Popcorn Tree's story
-function displayStory(character){
+function displayScene(character){
+    // Display the story belonging to the character received.
+    heading.textContent =character.story
+    displayScene(character_one);
+    displayScene(character_two);
+     
 
 }
 
