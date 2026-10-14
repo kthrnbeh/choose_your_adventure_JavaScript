@@ -39,9 +39,9 @@ function displayScene(character){
 
         const choiceButton = document.createElement('button');
     // Give the button the text stored in choice.
-        choiceButton.textContent=character_one.choices[0];
+        choiceButton.textContent=choice;
         choicesContainer.appendChild(choiceButton);
-        choiceButton.textContent=character_two.choices[0];
+        
         
 
     // Add the button to choicesContainer.
@@ -55,25 +55,12 @@ function displayScene(character){
 snowManButton.addEventListener("click", function() {
     // Change the heading to the Snowman's story
     displayScene(character_one);
-    choicesContainer.innerHTML = "";
-    const songButton = document.createElement("button");
-    songButton.textContent = character_one.choices[0];
-    choicesContainer.appendChild(songButton);
-    const scarfButton = document.createElement("button");
-    scarfButton.textContent = character_one.choices[1];
-    choicesContainer.appendChild(scarfButton);
  
 });
 PopcornTreeButton.addEventListener("click", function() {
     // Change the heading to the popcorn tree story
     displayScene(character_two);
-    choicesContainer.innerHTML = "";
-    const songButton = document.createElement("button");
-    songButton.textContent = character_two.choices[0];
-    choicesContainer.appendChild(songButton);
-    const roomButton = document.createElement("button");
-    roomButton.textContent = character_two.choices[1];
-    choicesContainer.appendChild(roomButton);
+    
 });
 //let currentScene="start";
 
