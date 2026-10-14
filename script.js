@@ -18,7 +18,7 @@ const character_two ={
 }
 const heading =document.getElementById("character_choice");
 const choicesContainer = document.getElementById("choices");
-const treeButton = document.getElementById("tree");
+const PopcornTreeButton = document.getElementById("tree");
 const snowManButton=document.getElementById("snowman");
 
 // 2. Make the character buttons work
