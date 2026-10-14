@@ -48,16 +48,22 @@ function displayScene(character){
     // Give the button the text stored in choice.
         choiceButton.textContent=choice.text;
         choicesContainer.appendChild(choiceButton);
+                // Listen for the player to click a choice.
         choiceButton.addEventListener("click", function() {
             if (choice.nextScene === "Return") {
-    // Restart the game.
+                // We will call restartGame() here.
+            } else {
+                // Display the next adventure scene.
+                displayScene(scenes[choice.nextScene]);
+            }
 
-}   else {
-    // Display the next story scene.
-    displayScene(scenes[choice.nextScene])
         }); 
-}
+
+    }); 
+
+} 
         
+
    
 snowManButton.addEventListener("click", function() {
     // Change the heading to the Snowman's story
