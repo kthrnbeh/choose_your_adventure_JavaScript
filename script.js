@@ -23,8 +23,8 @@ const snowManButton=document.getElementById("snowman");
 
 button.addEventListener("click", function() {
     // Instructions go here when the button is clicked.
-    div.textContent= character_one.snowman
-    div.textContent=character_two.tree
+    heading.textContent= character_one.story
+    heading.textContent=character_two.story
 
 });
 //let currentScene="start";
