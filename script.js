@@ -29,15 +29,15 @@ const snowManButton=document.getElementById("snowman");
 function displayScene(character){
     // Display the story belonging to the character received.
     heading.textContent =character.story
-    displayScene(character_one);
-    displayScene(character_two);
+    
      
 
 }
 
+    
 snowManButton.addEventListener("click", function() {
     // Change the heading to the Snowman's story
-    heading.textContent =character_one.story
+    displayScene(character_one);
     choicesContainer.innerHTML = "";
     const songButton = document.createElement("button");
     songButton.textContent = character_one.choices[0];
@@ -49,7 +49,7 @@ snowManButton.addEventListener("click", function() {
 });
 PopcornTreeButton.addEventListener("click", function() {
     // Change the heading to the popcorn tree story
-    heading.textContent=character_two.story
+    displayScene(character_two);
     choicesContainer.innerHTML = "";
     const songButton = document.createElement("button");
     songButton.textContent = character_two.choices[0];
