@@ -35,7 +35,7 @@ const snowManButton=document.getElementById("snowman");
 function restartGame() {
 
     // Change the question back to "Pick your Character".
-     heading.textContent =character.story
+     heading.textContent ="Let the adventure begin!
     // Remove the current adventure choice buttons.
     choicesContainer.innerHTML = "";
 
@@ -49,7 +49,7 @@ function restartGame() {
 
 function displayScene(character){
     // Display the story belonging to the character received.
-    heading.textContent = "Let the adventure begin!"
+    heading.textContent = character.story
     // Remove the previous choices.
     choicesContainer.innerHTML = "";
 
