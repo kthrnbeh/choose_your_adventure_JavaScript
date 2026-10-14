@@ -145,6 +145,88 @@ const scenes = {
         ]
 
     },
+    snowmanSong:{
+        story:"Once there was a snow man!",
+         choices: [
+            // The two choices for this scene go here.
+            {
+                text:"He was tall, tall, tall!",
+                nextScene:"Small"//end of choices return to start
+            },
+            {
+                text:"He wanted adventure!",
+                nextScene:"Adventure"//end of choices return to start
+            },
+
+           
+        ]
+
+    },
+    Small: {
+            story:"Then the sun came out!",
+            choices: [
+            // The two choices for this scene go here.
+            {
+                text:"in the sun he melted!",
+                nextScene:"Melted"//end of choices return to start
+            },
+            {
+                text:"He wanted adventure!",
+                nextScene:"Adventure"//end of choices return to start
+            },
+
+           
+        ],
+        Melted: {
+            story:"After He melted!",
+            choices: [
+            // The two choices for this scene go here.
+            {
+                text:"he became small, small small!",
+                nextScene:"Return"//end of choices return to start
+            },
+            {
+                text:"Oh No, no more snowman!",
+                nextScene:"Return"//end of choices return to start
+            },
+
+           
+        ]
+
+    },
+    PopcornSong:{
+        story:"Cool Flip Snowman!",
+         choices: [
+            // The two choices for this scene go here.
+            {
+                text:"He's tired now.",
+                nextScene:"Return"//end of choices return to start
+            },
+           
+        ]
+
+    },
+    gotoRoom:{
+        story:"Cool Flip Snowman!",
+         choices: [
+            // The two choices for this scene go here.
+            {
+                text:"He's tired now.",
+                nextScene:"Return"//end of choices return to start
+            },
+         ]
+        },
+    Adventure:{
+        story:"Cool Flip Snowman!",
+         choices: [
+            // The two choices for this scene go here.
+            {
+                text:"He's tired now.",
+                nextScene:"Return"//end of choices return to start
+            },
+         ]
+        },
+
 };
     
         
