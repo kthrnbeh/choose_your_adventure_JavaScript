@@ -7,7 +7,7 @@ const character_one ={
     color: "white",
     season:"winter",
     story:"Once there was a snowman...",
-    choices: ["follow the song", "Give him a magic scarf"]
+    choices: ["Follow the song! 🎵", "Give him a magic scarf!☃️"]
 }
 const character_two ={
     name: "PopcornTree",
