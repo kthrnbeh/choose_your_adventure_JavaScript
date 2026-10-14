@@ -151,33 +151,3 @@ const scenes = {
     
     
 
-// 5. Change the pictures as the story continues
-//    - Find the place in HTML where the story picture will appear
-//    - Display the picture that belongs to the current scene
-//    - Change the picture when the player makes a choice
-
-
-// 6. Keep track of the current scene
-//    - Create a variable to remember which scene the player is in
-//    - Update that variable when the player makes a choice
-
-
-// 7. Create a function to display scenes
-//    - Get the story text for the current scene
-//    - Display the correct picture
-//    - Display the two available choices
-//    - Make the new buttons respond to clicks
-
-
-// 8. Add a restart option
-//    - Create a restart button
-//    - Listen for the restart button to be clicked
-//    - Return the player to the character selection screen
-//    - Show the Popcorn Tree and Snowman pictures again
-
-
-// 9. Test the completed game
-//    - Test both starting characters
-//    - Test every choice and story path
-//    - Make sure the pictures change correctly
-//    - Make sure restart works
