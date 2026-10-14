@@ -35,8 +35,9 @@ snowManButton.addEventListener("click", function() {
 
 });
 PopcornTreeButton.addEventListener("click", function() {
-    // Change the heading to the Snowman's story
+    // Change the heading to the popcorn tree story
     heading.textContent=character_two.story
+    choicesContainer.innerHTML = "";
 });
 //let currentScene="start";
 
