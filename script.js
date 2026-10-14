@@ -52,6 +52,7 @@ function displayScene(character){
         choiceButton.addEventListener("click", function() {
             if (choice.nextScene === "Return") {
                 // We will call restartGame() here.
+                return restartGame();
             } else {
                 // Display the next adventure scene.
                 displayScene(scenes[choice.nextScene]);
