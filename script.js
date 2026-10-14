@@ -46,19 +46,15 @@ function displayScene(character){
 
         const choiceButton = document.createElement('button');
     // Give the button the text stored in choice.
-        choiceButton.textContent=choice;
+        choiceButton.textContent=choice.text;
         choicesContainer.appendChild(choiceButton);
-        
-        
+        choiceButton.addEventListener("click", function() {
+        displayScene(scenes[choice.nextScene])
+        }); 
 
-    // Add the button to choicesContainer.
-
-    });
-     
-
+    }); 
 }
-
-    
+   
 snowManButton.addEventListener("click", function() {
     // Change the heading to the Snowman's story
     displayScene(character_one);
@@ -75,18 +71,32 @@ PopcornTreeButton.addEventListener("click", function() {
 
 
 
-// 4. Create the different adventure scenes
-//    - Create a scene for following the Snowman song
-//    - Create a scene for giving Snowman a magic scarf
-//    - Create a scene for following the Popcorn Tree song
-//    - Create a scene for going to the girl's room
-//    - Give each scene its own story text
-//    - Give each scene two choices
-//    - Connect each choice to the next scene
-    const magicScarf= {
-        story:"As the snowman received the blue scarf magic came upon him.",
-        choices:["He began to dance","He wanted adventure"],
+
+    
+//holds all the story lines 
+// Store all adventure scenes in one place.
+const scenes = {
+    snowMan: character_one,
+    popcornTree: character_two,
+    const scenes = {
+    snowMan: character_one,
+    popcornTree: character_two,
+
+    magicScarf: {
+        story: "As the snowman received the blue scarf, magic came upon him.",
+        choices: [
+            // The two choices for this scene go here.
+            {
+                text:"The snowman begins to dance.",
+                nextScene:"Dance"
+            },
+            {
+                text:"The snowman wants adventure!",
+                nextScene:"Adventure"
+            }
+        ]
     }
+};
     
         
     
