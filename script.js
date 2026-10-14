@@ -31,6 +31,7 @@ const snowManButton=document.getElementById("snowman");
 snowManButton.addEventListener("click", function() {
     // Change the heading to the Snowman's story
     heading.textContent =character_one.story
+    choicesContainer.innerHTML = "";
 
 });
 PopcornTreeButton.addEventListener("click", function() {
