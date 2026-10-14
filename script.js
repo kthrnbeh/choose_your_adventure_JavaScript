@@ -31,6 +31,20 @@ const heading =document.getElementById("character_choice");
 const choicesContainer = document.getElementById("choices");
 const PopcornTreeButton = document.getElementById("tree");
 const snowManButton=document.getElementById("snowman");
+// Restart the game and return to character selection.
+function restartGame() {
+
+    // Change the question back to "Pick your Character".
+     heading.textContent =character.story
+    // Remove the current adventure choice buttons.
+    choicesContainer.innerHTML = "";
+
+    // Put the Popcorn Tree button back on the webpage.
+    choicesContainer.appendChild(PopcornTreeButton)
+    // Put the Snowman button back on the webpage.
+    choicesContainer
+
+}
 
 
 function displayScene(character){
