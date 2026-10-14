@@ -1,7 +1,4 @@
-// 1. Create the story data
-//    - Each scene needs story text
-//    - Each scene needs one or more choices
-//    - Each choice should point to another scene
+
 const character_one ={
     name: "SnowMan",
     color: "white",
@@ -21,11 +18,7 @@ const choicesContainer = document.getElementById("choices");
 const PopcornTreeButton = document.getElementById("tree");
 const snowManButton=document.getElementById("snowman");
 
-// 2. Make the character buttons work
-//    - Listen for a click on the Snowman button
-//    - Change the story text to the Snowman's story
-//    - Listen for a click on the Popcorn Tree button
-//    - Change the story text to the Popcorn Tree's story
+
 function displayScene(character){
     // Display the story belonging to the character received.
     heading.textContent =character.story
@@ -67,12 +60,6 @@ PopcornTreeButton.addEventListener("click", function() {
 //const story ={}
 
 
-// 3. Show the next two choices
-//    - Remove the old character buttons
-//    - Get the two choices from the selected character
-//    - Create a new button for each choice
-//    - Display those buttons on the webpage
-
 
 // 4. Create the different adventure scenes
 //    - Create a scene for following the Snowman song
@@ -82,6 +69,10 @@ PopcornTreeButton.addEventListener("click", function() {
 //    - Give each scene its own story text
 //    - Give each scene two choices
 //    - Connect each choice to the next scene
+    const magicScarf= {
+        story:"As the snowman received the blue scarf magic came upon him.",
+        choices:["He began to dance","He wanted adventure"],
+    }
 
 
 // 5. Change the pictures as the story continues
