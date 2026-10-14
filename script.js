@@ -176,8 +176,9 @@ const scenes = {
             },
 
            
-        ],
-        Melted: {
+        ]
+    },
+    Melted: {
             story:"After He melted!",
             choices: [
             // The two choices for this scene go here.
