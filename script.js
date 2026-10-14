@@ -33,10 +33,10 @@ snowManButton.addEventListener("click", function() {
     heading.textContent =character_one.story
     choicesContainer.innerHTML = "";
     const songButton = document.createElement("button");
-    newButton.textContent = character_one.choices[0];
+    songButton.textContent = character_one.choices[0];
     choicesContainer.appendChild(songButton);
     const scarfButton = document.createElement("button");
-    newButton.textContent = character_one.choices[1];
+    scarfButton.textContent = character_one.choices[1];
     choicesContainer.appendChild(scarfButton);
 
 });
