@@ -92,7 +92,8 @@ const scenes = {
                 nextScene:"Adventure"
             }
         ]
-    }
+    },
+    Dance:
 };
     
         
