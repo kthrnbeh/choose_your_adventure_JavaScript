@@ -7,14 +7,14 @@ const character_one ={
     color: "white",
     season:"winter",
     story:"Once there was a snowman...",
-    choices: ["Follow the song! 🎵", "Give him a magic scarf!☃️"]
+    choices: ["Follow the song! 🎵🎵", "Give him a magic scarf!☃️"]
 }
 const character_two ={
     name: "PopcornTree",
     color:"brown",
     season:"spring",
     story:"You look out your window...",
-    choices:["Follow the song", "Go to your room."]
+    choices:["Follow the song🎵🎵", "Go to your room.🚪"]
 }
 const heading =document.getElementById("character_choice");
 const choicesContainer = document.getElementById("choices");
