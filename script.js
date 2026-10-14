@@ -4,14 +4,28 @@ const character_one ={
     color: "white",
     season:"winter",
     story:"Once there was a snowman...",
-    choices: ["Follow the song! 🎵🎵", "Give him a magic scarf!☃️"]
+    choices: [
+        { text:"Follow the song! 🎵🎵",
+            nextScene: "snowManSong"
+        }, {text:"Give him a magic scarf!☃️",
+            nextScene:"magicScarf"
+        }
+    ]
 }
 const character_two ={
     name: "PopcornTree",
     color:"brown",
     season:"spring",
     story:"You look out your window...",
-    choices:["Follow the song🎵🎵", "Go to your room.🚪"]
+    choices:[
+        {text:"Follow the song🎵🎵",
+         nextScene: "PopcornSong"
+         },
+         {text: "Go to your room.",
+            nextScene:"gotoRoom"
+         }
+
+    ]
 }
 const heading =document.getElementById("character_choice");
 const choicesContainer = document.getElementById("choices");
@@ -69,11 +83,11 @@ PopcornTreeButton.addEventListener("click", function() {
 //    - Give each scene its own story text
 //    - Give each scene two choices
 //    - Connect each choice to the next scene
-    const magicScarf= [
-        {
+    const magicScarf= {
         story:"As the snowman received the blue scarf magic came upon him.",
-        choices:["He began to dance","He wanted adventure"],}
-    ]
+        choices:["He began to dance","He wanted adventure"],
+    }
+    
         
     
     const scarfChoice=[
