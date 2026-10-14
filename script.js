@@ -14,7 +14,7 @@ const character_two ={
     color:"brown",
     season:"spring",
     story:"You look out your window...",
-    choices:["follow the song", "Go to your room."]
+    choices:["Follow the song", "Go to your room."]
 }
 const heading =document.getElementById("character_choice");
 const choicesContainer = document.getElementById("choices");
@@ -44,6 +44,12 @@ PopcornTreeButton.addEventListener("click", function() {
     // Change the heading to the popcorn tree story
     heading.textContent=character_two.story
     choicesContainer.innerHTML = "";
+    const songButton = document.createElement("button");
+    songButton.textContent = character_two.choices[0];
+    choicesContainer.appendChild(songButton);
+    const roomButton = document.createElement("button");
+    roomButton.textContent = character_two.choices[1];
+    choicesContainer.appendChild(roomButton);
 });
 //let currentScene="start";
 
