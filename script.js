@@ -21,20 +21,25 @@ const choicesContainer = document.getElementById("choices");
 const treeButton = document.getElementById("tree");
 const snowManButton=document.getElementById("snowman");
 
-button.addEventListener("click", function() {
-    // Instructions go here when the button is clicked.
-    heading.textContent= character_one.story
-    heading.textContent=character_two.story
-
-});
-//let currentScene="start";
-
-//const story ={}
 // 2. Make the character buttons work
 //    - Listen for a click on the Snowman button
 //    - Change the story text to the Snowman's story
 //    - Listen for a click on the Popcorn Tree button
 //    - Change the story text to the Popcorn Tree's story
+
+
+snowManButton.addEventListener("click", function() {
+    // Change the heading to the Snowman's story
+    heading.textContent =character_one.snowMan
+
+});
+PopcornTreeButton.addEventListener("click", function() {
+    // Change the heading to the Snowman's story
+    heading.textContent=character_two.PopcornTree
+});
+//let currentScene="start";
+
+//const story ={}
 
 
 // 3. Show the next two choices
