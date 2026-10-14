@@ -29,7 +29,23 @@ const snowManButton=document.getElementById("snowman");
 function displayScene(character){
     // Display the story belonging to the character received.
     heading.textContent =character.story
-    
+    // Remove the previous choices.
+
+    // Go through each choice in the selected character.
+   
+    character.choices.forEach(function(choice) {
+        // Create a new button.
+
+        const choiceButton = document.createElement('button');
+    // Give the button the text stored in choice.
+        choiceButton.textContent=character_one.choices[0];
+        choicesContainer.appendChild(choiceButton);
+        choiceButton.textContent=character_two.choices[0];
+        
+
+    // Add the button to choicesContainer.
+
+    });
      
 
 }
