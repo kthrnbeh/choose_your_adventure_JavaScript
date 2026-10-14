@@ -26,7 +26,9 @@ const snowManButton=document.getElementById("snowman");
 //    - Change the story text to the Snowman's story
 //    - Listen for a click on the Popcorn Tree button
 //    - Change the story text to the Popcorn Tree's story
+function displayStory(character){
 
+}
 
 snowManButton.addEventListener("click", function() {
     // Change the heading to the Snowman's story
@@ -38,7 +40,7 @@ snowManButton.addEventListener("click", function() {
     const scarfButton = document.createElement("button");
     scarfButton.textContent = character_one.choices[1];
     choicesContainer.appendChild(scarfButton);
-
+ 
 });
 PopcornTreeButton.addEventListener("click", function() {
     // Change the heading to the popcorn tree story
