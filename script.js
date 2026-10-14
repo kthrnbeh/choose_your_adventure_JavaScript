@@ -42,7 +42,7 @@ function restartGame() {
     // Put the Popcorn Tree button back on the webpage.
     choicesContainer.appendChild(PopcornTreeButton)
     // Put the Snowman button back on the webpage.
-    choicesContainer
+    choicesContainer.appendChild(snowManButton)
 
 }
 
