@@ -49,11 +49,15 @@ function displayScene(character){
         choiceButton.textContent=choice.text;
         choicesContainer.appendChild(choiceButton);
         choiceButton.addEventListener("click", function() {
-        displayScene(scenes[choice.nextScene])
-        }); 
+            if (choice.nextScene === "Return") {
+    // Restart the game.
 
-    }); 
+}   else {
+    // Display the next story scene.
+    displayScene(scenes[choice.nextScene])
+        }); 
 }
+        
    
 snowManButton.addEventListener("click", function() {
     // Change the heading to the Snowman's story
@@ -93,7 +97,33 @@ const scenes = {
             }
         ]
     },
-    Dance:
+    Dance:{
+        story:"The snowman jolly and bright dances!",
+         choices: [
+            // The two choices for this scene go here.
+            {
+                text:"He does a flip.",
+                nextScene:"Flip"
+            },
+            {
+                text:"He is done.",
+                nextScene:"Return"//restart the game
+            }
+        ]
+
+    },
+    Flip:{
+        story:"Cool Flip Snowman!",
+         choices: [
+            // The two choices for this scene go here.
+            {
+                text:"He's tired now.",
+                nextScene:"Return"//end of choices return to start
+            },
+           
+        ]
+
+    },
 };
     
         
