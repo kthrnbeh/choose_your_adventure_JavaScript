@@ -30,6 +30,7 @@ function displayScene(character){
     // Display the story belonging to the character received.
     heading.textContent =character.story
     // Remove the previous choices.
+    choicesContainer.innerHTML = "";
 
     // Go through each choice in the selected character.
    
