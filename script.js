@@ -30,12 +30,12 @@ const snowManButton=document.getElementById("snowman");
 
 snowManButton.addEventListener("click", function() {
     // Change the heading to the Snowman's story
-    heading.textContent =character_one.snowMan
+    heading.textContent =character_one.story
 
 });
 PopcornTreeButton.addEventListener("click", function() {
     // Change the heading to the Snowman's story
-    heading.textContent=character_two.PopcornTree
+    heading.textContent=character_two.tree
 });
 //let currentScene="start";
 
