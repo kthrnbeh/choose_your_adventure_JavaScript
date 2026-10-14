@@ -49,7 +49,7 @@ function restartGame() {
 
 function displayScene(character){
     // Display the story belonging to the character received.
-    heading.textContent = character.story
+    heading.textContent = "Let the adventure begin!"
     // Remove the previous choices.
     choicesContainer.innerHTML = "";
 
