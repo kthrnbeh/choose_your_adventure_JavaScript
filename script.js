@@ -18,11 +18,13 @@ const character_two ={
 }
 const heading =document.getElementById("character_choice");
 const choicesContainer = document.getElementById("choices");
-const choices = document.getElementById("tree");
-const choices=document.getElementById("snowman");
+const treeButton = document.getElementById("tree");
+const snowManButton=document.getElementById("snowman");
 
 button.addEventListener("click", function() {
     // Instructions go here when the button is clicked.
+    div.textContent= character_one.snowman
+    div.textContent=character_two.tree
 
 });
 //let currentScene="start";
