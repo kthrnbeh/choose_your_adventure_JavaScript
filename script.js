@@ -69,15 +69,17 @@ PopcornTreeButton.addEventListener("click", function() {
 //    - Give each scene its own story text
 //    - Give each scene two choices
 //    - Connect each choice to the next scene
-    const magicScarf= {
+    const magicScarf= [
+        {
         story:"As the snowman received the blue scarf magic came upon him.",
-        choices:["He began to dance","He wanted adventure"],
+        choices:["He began to dance","He wanted adventure"],}
+    ]
         
-    }
-    const scarfChoice={
-            text:"Give him a magic scarf!",
-            nextScene:"magic scarf",
-        }
+    
+    const scarfChoice=[
+            {text:"Give him a magic scarf!",
+            nextScene:"magicScarf"}
+        ]
 
 // 5. Change the pictures as the story continues
 //    - Find the place in HTML where the story picture will appear
