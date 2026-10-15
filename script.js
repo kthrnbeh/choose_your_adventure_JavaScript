@@ -457,7 +457,7 @@ Knight:{
     choices: [
         {
             text:"Raise the shield",
-            image:"images/",
+            image:"images/block.png",
             nextScene:"Shield"
         },
         {
