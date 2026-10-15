@@ -541,7 +541,7 @@ LeadDragon:{
         },
         {
             text:"Return to the castle",
-            image:"images/",
+            image:"images/last.png",
             nextScene:"KnightEnding"
         },
     ]
