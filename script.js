@@ -525,7 +525,7 @@ HelpDragon:{
         },
         {
             text:"Give the dragon food",
-            image:"images/",
+            image:"images/food",
             nextScene:"LeadDragon"
         },
     ]
@@ -536,7 +536,7 @@ LeadDragon:{
     choices: [
         {
             text:"Celebrate with the dragons",
-            image:"images/",
+            image:"images/dragon_celebrate.png",
             nextScene:"KnightEnding"
         },
         {
