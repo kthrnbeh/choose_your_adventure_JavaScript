@@ -31,6 +31,8 @@ const heading =document.getElementById("character_choice");
 const choicesContainer = document.getElementById("choices");
 const PopcornTreeButton = document.getElementById("tree");
 const snowManButton=document.getElementById("snowman");
+const choiceImage =document.createElement("img");
+
 function restartGame() {
 
      heading.textContent ="Let the adventure begin!";
@@ -165,7 +167,7 @@ const scenes = {
             },
             {
                 text:"Oh No, no more snowman!",
-                image:"images/",
+                image:"images/snow_melt.png",
                 nextScene:"Return"
             },
 
@@ -178,7 +180,7 @@ const scenes = {
          choices: [
             {
                 text:"He's tired now.",
-                image:"images/",
+                image:"images/snow_tired.png",
                 nextScene:"Return"
             },
          ]
@@ -189,12 +191,12 @@ const scenes = {
          choices: [
             {
                 text:"Popcorn popping on the apricot tree.",
-                image:"images/",
+                image:"images/look.png",
                 nextScene: "Surprise"
             },
              {
                 text:"A beautiful tree but I'm done looking now.",
-                image:"images/",
+                image:"images/turn_away.png",
                 nextScene:"gotoRoom"
             },
            
@@ -205,12 +207,12 @@ const scenes = {
          choices: [
             {
                 text:"Popcorn popping right before my eyes.",
-                image:"images/",
+                image:"images/see.png",
                 nextScene:"Handful"
             },
              {
                 text:"Not interested.",
-                image:"images/",
+                image:"images/turn_away.png",
                 nextScene:"Return"
             },
            
@@ -221,12 +223,12 @@ const scenes = {
          choices: [
             {
                 text:"A popcorn ball that would smell so sweet.",
-                image:"images/",
+                image:"images/popcorn.png",
                 nextScene:"Notso"
             },
              {
-                text:"Not interested.",
-                image:"images/",
+                text:"Dance with the tree.",
+                image:"images/dance_tree.png",
                 nextScene:"Return"
             },
            
@@ -238,7 +240,7 @@ const scenes = {
          choices: [
             {
                 text:"A popcorn ball on the Apricot tree.",
-                image:"images/",
+                image:"images/popcorn.png",
                 nextScene:"Return"
             },
            
@@ -255,7 +257,7 @@ const scenes = {
             },
             {
                 text:"Become a Knight.",
-                image:"images/",
+                image:"images/knight.png",
                 nextScene:"Knight"
             },
          ]
@@ -271,7 +273,7 @@ const scenes = {
             {
                 text:"Discover a secret garden.",
                 image:"images/",
-                nextScene:"Flowers"
+                nextScene:"princessGarden"
             },
          ]
         },
@@ -437,11 +439,11 @@ princessEnding: {
     choices: [
         {
             text:"Play again",
-            nextScene:"characterChoice"
+            nextScene:"Return"
         },
         {
             text:"Choose another adventure",
-            nextScene:"characterChoice"
+            nextScene:"Return"
         },
     ]
 },
