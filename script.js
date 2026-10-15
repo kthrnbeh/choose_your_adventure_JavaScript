@@ -357,10 +357,12 @@ gardenFountain: {
     choices: [
         {
             text:"Take the seed carefully",
+            image:
             nextScene:"littleCreature"
         },
         {
             text:"Use her magic to lift it",
+            image:
             nextScene:"littleCreature"
         },
     ]
@@ -371,10 +373,12 @@ littleCreature: {
     choices: [
         {
             text:"Share the garden's magic",
+            image:
             nextScene:"shareMagic"
         },
         {
             text:"Invite the creature to the castle",
+            image:
             nextScene:"makeFriend"
         },
     ]
@@ -385,10 +389,12 @@ shareMagic: {
     choices: [
         {
             text:"Water the seed",
+            image:
             nextScene:"gardenBloom"
         },
         {
             text:"Sing a happy song",
+            image:
             nextScene:"gardenBloom"
         },
     ]
@@ -399,10 +405,12 @@ makeFriend: {
     choices: [
         {
             text:"Plant flowers together",
+            image:
             nextScene:"gardenBloom"
         },
         {
             text:"Show the creature the castle",
+            image:
             nextScene:"gardenBloom"
         },
     ]
@@ -413,10 +421,12 @@ gardenBloom: {
     choices: [
         {
             text:"Celebrate in the garden",
+            image:
             nextScene:"princessEnding"
         },
         {
             text:"Give the creature a flower crown",
+            image:
             nextScene:"princessEnding"
         },
     ]
@@ -440,10 +450,12 @@ Knight:{
     choices: [
         {
             text:"Raise the shield",
+            image:
             nextScene:"Shield"
         },
         {
             text:"Talk to the dragon",
+            image:
             nextScene:"TalkDragon"
         },
     ]
@@ -454,10 +466,12 @@ Shield:{
     choices: [
         {
             text:"Stand up bravely",
+            image:
             nextScene:"StandUp"
         },
         {
             text:"Run back to the castle",
+            image:
             nextScene:"Return"
         },
     ]
@@ -468,6 +482,7 @@ StandUp:{
     choices: [
         {
             text:"Help remove the thorn",
+            image:
             nextScene:"HelpDragon"
         },
         {
@@ -482,10 +497,12 @@ TalkDragon:{
     choices: [
         {
             text:"Help the dragon",
+            image:
             nextScene:"HelpDragon"
         },
         {
             text:"Leave the dragon alone",
+            image:
             nextScene:"Return"
         },
     ]
@@ -496,10 +513,12 @@ HelpDragon:{
     choices: [
         {
             text:"Lead the dragon home",
+            image:
             nextScene:"LeadDragon"
         },
         {
             text:"Give the dragon food",
+            image:
             nextScene:"LeadDragon"
         },
     ]
@@ -510,10 +529,12 @@ LeadDragon:{
     choices: [
         {
             text:"Celebrate with the dragons",
+            image:
             nextScene:"KnightEnding"
         },
         {
             text:"Return to the castle",
+            image:
             nextScene:"KnightEnding"
         },
     ]
