@@ -237,8 +237,47 @@ const scenes = {
                 nextScene:"Baby"
             },
             {
-                text:"Become a Knight.",
-                nextScene:"Knight"
+                text:"Discover a secret garden.",
+                nextScene:"Flowers"
+            },
+         ]
+        },
+        Baby:{
+        story:"We need to help the baby dragon!",
+         choices: [
+            {
+                text:"Find mom!",
+                nextScene:"Mom"
+            },
+            {
+                text:"Sing baby to sleep",
+                nextScene:"snowmanSong"
+            },
+         ]
+        },
+        Mom:{
+        story:"See glowing footsteps that look like dragons",
+         choices: [
+            {
+                text:"Follow the footsteps!",
+                nextScene:"Footsteps"
+            },
+            {
+                text:"Give up.",
+                nextScene:"Return"
+            },
+         ]
+        },
+        Footsteps:{
+        story:"You did it! You found mom she is really grateful.",
+         choices: [
+            {
+                text:"She gives you a magic scarf!",
+                nextScene:"magicScarf"
+            },
+            {
+                text:"Time to headhome.",
+                nextScene:"Return"
             },
          ]
         },
