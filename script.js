@@ -196,15 +196,60 @@ const scenes = {
 
     },
     PopcornSong:{
-        story:"Cool Flip Snowman!",
+        story:"I looked out the window and what did I see!",
          choices: [
             // The two choices for this scene go here.
             {
-                text:"He's tired now.",
+                text:"Popcorn popping on the apricot tree.",
+                nextScene:"Suprise"//end of choices return to start
+            },
+             {
+                text:"A beautiful tree but I'm done looking now.",
+                nextScene:"gotoRoom"//end of choices return to start
+            },
+           
+        ],
+        Suprise:{
+        story:"Spring has brought me such a nice suprise!",
+         choices: [
+            // The two choices for this scene go here.
+            {
+                text:"Popcorn popping right before my eyes.",
+                nextScene:"Handful"//end of choices return to start
+            },
+             {
+                text:"Not interested.",
                 nextScene:"Return"//end of choices return to start
             },
            
-        ]
+        ],
+    },
+        Handful:{
+        story:"I can take a handful that smells so sweet!",
+         choices: [
+            // The two choices for this scene go here.
+            {
+                text:"A popcorn ball that would smell so sweet.",
+                nextScene:"Notso"//end of choices return to start
+            },
+             {
+                text:"Not interested.",
+                nextScene:"Return"//end of choices return to start
+            },
+           
+        ],
+
+    },
+    Notso:{
+        story:"it wasn't really so but it seemed to me!",
+         choices: [
+            // The two choices for this scene go here.
+            {
+                text:"A popcorn ball on the Apricot tree.",
+                nextScene:"Return"//end of choices return to start
+            },
+           
+        ],
 
     },
     gotoRoom:{
