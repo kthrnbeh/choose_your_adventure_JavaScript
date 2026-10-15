@@ -276,7 +276,7 @@ const scenes = {
             },
             {
                 text:"Discover a secret garden.",
-                image:"images/",
+                image:"images/garden_door.png",
                 nextScene:"princessGarden"
             },
          ]
@@ -286,7 +286,7 @@ const scenes = {
          choices: [
             {
                 text:"Find mom!",
-                image:"images/",
+                image:"images/lead.png",
                 nextScene:"Mom"
             },
             {
