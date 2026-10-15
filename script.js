@@ -82,12 +82,12 @@ const scenes = {
         choices: [
             {
                 text:"The snowman begins to dance.",
-                image:
+                image:"images/dance_snowman.png",
                 nextScene:"Dance"
             },
             {
                 text:"The snowman wants adventure!",
-                image:
+                image:"images/snow_adventure.png",
                 nextScene:"Adventure"
             }
         ]
@@ -97,12 +97,12 @@ const scenes = {
          choices: [
             {
                 text:"He does a flip.",
-                image:
+                image:"images/snow_flip.png",
                 nextScene:"Flip"
             },
             {
                 text:"He is done.",
-                image:
+                image:"images/all_done_snow.png",
                 nextScene:"Return"
             }
         ]
@@ -113,7 +113,7 @@ const scenes = {
          choices: [
             {
                 text:"He's tired now.",
-                image:
+                image:"images/snow_tired.png",
                 nextScene:"Return"
             },
            
@@ -125,12 +125,12 @@ const scenes = {
          choices: [
             {
                 text:"He was tall, tall, tall!",
-                image:
+                image:"images/tall.png",
                 nextScene:"Small"
             },
             {
                 text:"He wanted adventure!",
-                image:
+                image:"images/snow_adventure.png",
                 nextScene:"Adventure"
             },
 
@@ -143,12 +143,12 @@ const scenes = {
             choices: [
             {
                 text:"in the sun he melted!",
-                image:
+                image:"images/supersmall.png",
                 nextScene:"Melted"
             },
             {
                 text:"He wanted adventure!",
-                image:
+                image:"images/snow_adventure.png",
                 nextScene:"Adventure"
             },
 
@@ -160,12 +160,12 @@ const scenes = {
             choices: [
             {
                 text:"he became small, small small!",
-                image:
+                image:"images/small.png",
                 nextScene:"Return"
             },
             {
                 text:"Oh No, no more snowman!",
-                image:
+                image:"images/",
                 nextScene:"Return"
             },
 
@@ -178,7 +178,7 @@ const scenes = {
          choices: [
             {
                 text:"He's tired now.",
-                image:
+                image:"images/",
                 nextScene:"Return"
             },
          ]
@@ -189,12 +189,12 @@ const scenes = {
          choices: [
             {
                 text:"Popcorn popping on the apricot tree.",
-                image:
+                image:"images/",
                 nextScene: "Surprise"
             },
              {
                 text:"A beautiful tree but I'm done looking now.",
-                image:
+                image:"images/",
                 nextScene:"gotoRoom"
             },
            
@@ -205,12 +205,12 @@ const scenes = {
          choices: [
             {
                 text:"Popcorn popping right before my eyes.",
-                image:
+                image:"images/",
                 nextScene:"Handful"
             },
              {
                 text:"Not interested.",
-                image:
+                image:"images/",
                 nextScene:"Return"
             },
            
@@ -221,12 +221,12 @@ const scenes = {
          choices: [
             {
                 text:"A popcorn ball that would smell so sweet.",
-                image:
+                image:"images/",
                 nextScene:"Notso"
             },
              {
                 text:"Not interested.",
-                image:
+                image:"images/",
                 nextScene:"Return"
             },
            
@@ -238,7 +238,7 @@ const scenes = {
          choices: [
             {
                 text:"A popcorn ball on the Apricot tree.",
-                image:
+                image:"images/",
                 nextScene:"Return"
             },
            
@@ -250,12 +250,12 @@ const scenes = {
          choices: [
             {
                 text:"Become a princess.",
-                image:
+                image:"images/",
                 nextScene:"Princess"
             },
             {
                 text:"Become a Knight.",
-                image:
+                image:"images/",
                 nextScene:"Knight"
             },
          ]
@@ -265,12 +265,12 @@ const scenes = {
          choices: [
             {
                 text:"You find a baby dragon.",
-                image:
+                image:"images/",
                 nextScene:"Baby"
             },
             {
                 text:"Discover a secret garden.",
-                image:
+                image:"images/",
                 nextScene:"Flowers"
             },
          ]
@@ -280,12 +280,12 @@ const scenes = {
          choices: [
             {
                 text:"Find mom!",
-                image:
+                image:"images/",
                 nextScene:"Mom"
             },
             {
                 text:"Sing baby to sleep",
-                image:
+                image:"images/",
                 nextScene:"snowmanSong"
             },
          ]
@@ -295,12 +295,12 @@ const scenes = {
          choices: [
             {
                 text:"Follow the footsteps!",
-                image:
+                image:"images/",
                 nextScene:"Footsteps"
             },
             {
                 text:"Give up.",
-                image:
+                image:"images/",
                 nextScene:"Return"
             },
          ]
@@ -310,12 +310,12 @@ const scenes = {
          choices: [
             {
                 text:"She gives you a magic scarf!",
-                image:
+                image:"images/",
                 nextScene:"magicScarf"
             },
             {
                 text:"Time to headhome.",
-                image:
+                image:"images/",
                 nextScene:"Return"
             },
          ]
@@ -325,12 +325,12 @@ const scenes = {
     choices: [
         {
             text:"Follow the glowing petals",
-            image:
+            image:"images/",
             nextScene:"flowerPath"
         },
         {
             text:"Search the old fountain",
-            image:
+            image:"images/",
             nextScene:"gardenFountain"
         },
     ]
@@ -341,12 +341,12 @@ flowerPath: {
     choices: [
         {
             text:"Ask the creature what happened",
-            image:
+            image:"images/",
             nextScene:"littleCreature"
         },
         {
             text:"Follow the petals farther",
-            image:
+            image:"images/",
             nextScene:"littleCreature"
         },
     ]
@@ -357,12 +357,12 @@ gardenFountain: {
     choices: [
         {
             text:"Take the seed carefully",
-            image:
+            image:"images/",
             nextScene:"littleCreature"
         },
         {
             text:"Use her magic to lift it",
-            image:
+            image:"images/",
             nextScene:"littleCreature"
         },
     ]
@@ -373,12 +373,12 @@ littleCreature: {
     choices: [
         {
             text:"Share the garden's magic",
-            image:
+            image:"images/",
             nextScene:"shareMagic"
         },
         {
             text:"Invite the creature to the castle",
-            image:
+            image:"images/",
             nextScene:"makeFriend"
         },
     ]
@@ -389,12 +389,12 @@ shareMagic: {
     choices: [
         {
             text:"Water the seed",
-            image:
+            image:"images/",
             nextScene:"gardenBloom"
         },
         {
             text:"Sing a happy song",
-            image:
+            image:"images/",
             nextScene:"gardenBloom"
         },
     ]
@@ -405,12 +405,12 @@ makeFriend: {
     choices: [
         {
             text:"Plant flowers together",
-            image:
+            image:"images/",
             nextScene:"gardenBloom"
         },
         {
             text:"Show the creature the castle",
-            image:
+            image:"images/",
             nextScene:"gardenBloom"
         },
     ]
@@ -421,12 +421,12 @@ gardenBloom: {
     choices: [
         {
             text:"Celebrate in the garden",
-            image:
+            image:"images/",
             nextScene:"princessEnding"
         },
         {
             text:"Give the creature a flower crown",
-            image:
+            image:"images/",
             nextScene:"princessEnding"
         },
     ]
@@ -450,12 +450,12 @@ Knight:{
     choices: [
         {
             text:"Raise the shield",
-            image:
+            image:"images/",
             nextScene:"Shield"
         },
         {
             text:"Talk to the dragon",
-            image:
+            image:"images/",
             nextScene:"TalkDragon"
         },
     ]
@@ -466,12 +466,12 @@ Shield:{
     choices: [
         {
             text:"Stand up bravely",
-            image:
+            image:"images/",
             nextScene:"StandUp"
         },
         {
             text:"Run back to the castle",
-            image:
+            image:"images/",
             nextScene:"Return"
         },
     ]
@@ -482,7 +482,7 @@ StandUp:{
     choices: [
         {
             text:"Help remove the thorn",
-            image:
+            image:"images/",
             nextScene:"HelpDragon"
         },
         {
@@ -497,12 +497,12 @@ TalkDragon:{
     choices: [
         {
             text:"Help the dragon",
-            image:
+            image:"images/",
             nextScene:"HelpDragon"
         },
         {
             text:"Leave the dragon alone",
-            image:
+            image:"images/",
             nextScene:"Return"
         },
     ]
@@ -513,12 +513,12 @@ HelpDragon:{
     choices: [
         {
             text:"Lead the dragon home",
-            image:
+            image:"images/",
             nextScene:"LeadDragon"
         },
         {
             text:"Give the dragon food",
-            image:
+            image:"images/",
             nextScene:"LeadDragon"
         },
     ]
@@ -529,12 +529,12 @@ LeadDragon:{
     choices: [
         {
             text:"Celebrate with the dragons",
-            image:
+            image:"images/",
             nextScene:"KnightEnding"
         },
         {
             text:"Return to the castle",
-            image:
+            image:"images/",
             nextScene:"KnightEnding"
         },
     ]
