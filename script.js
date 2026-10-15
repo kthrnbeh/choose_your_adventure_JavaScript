@@ -428,12 +428,12 @@ gardenBloom: {
     choices: [
         {
             text:"Celebrate in the garden",
-            image:"images/",
+            image:"images/celebrate.png",
             nextScene:"princessEnding"
         },
         {
             text:"Give the creature a flower crown",
-            image:"images/",
+            image:"images/crown.png",
             nextScene:"princessEnding"
         },
     ]
@@ -462,7 +462,7 @@ Knight:{
         },
         {
             text:"Talk to the dragon",
-            image:"images/",
+            image:"images/angry_dragon.png",
             nextScene:"TalkDragon"
         },
     ]
@@ -473,7 +473,7 @@ Shield:{
     choices: [
         {
             text:"Stand up bravely",
-            image:"images/",
+            image:"images/dragon_blow.png",
             nextScene:"StandUp"
         },
         {
