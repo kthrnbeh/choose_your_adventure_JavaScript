@@ -1,6 +1,6 @@
 
 const character_one ={
-    name: "Snowman",
+    name: "SnowMan",
     color: "white",
     season:"winter",
     story:"Once there was a snowman...",
@@ -13,7 +13,7 @@ const character_one ={
     ]
 }
 const character_two ={
-    name: "Popcorn Tree",
+    name: "PopcornTree",
     color:"brown",
     season:"spring",
     story:"You look out your window...",
