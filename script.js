@@ -49,7 +49,18 @@ function displayScene(character){
     choicesContainer.innerHTML = "";
 
     character.choices.forEach(function(choice) {
-        const choiceButton = document.createElement('button');
+        const choiceButton = document.createElement('button');{
+            if (choice.image && choice.image !== "images/") {
+    const choiceImage = document.createElement("img");
+
+    choiceImage.src = choice.image;
+    choiceImage.alt = choice.text;
+
+    choiceButton.appendChild(choiceImage);
+}
+
+    choiceButton.append(choice.text);
+        }
        
 
         const choiceImage =document.createElement("img");
