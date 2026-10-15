@@ -478,7 +478,7 @@ Shield:{
         },
         {
             text:"Run back to the castle",
-            image:"images/",
+            image:"images/run.png",
             nextScene:"Return"
         },
     ]
@@ -509,7 +509,7 @@ TalkDragon:{
         },
         {
             text:"Leave the dragon alone",
-            image:"images/",
+            image:"images/run.png",
             nextScene:"Return"
         },
     ]
@@ -520,7 +520,7 @@ HelpDragon:{
     choices: [
         {
             text:"Lead the dragon home",
-            image:"images/",
+            image:"images/help_dragon1.png",
             nextScene:"LeadDragon"
         },
         {
