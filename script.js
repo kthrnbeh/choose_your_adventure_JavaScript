@@ -32,6 +32,10 @@ const choicesContainer = document.getElementById("choices");
 const PopcornTreeButton = document.getElementById("tree");
 const snowManButton=document.getElementById("snowman");
 const choiceImage =document.createElement("img");
+choiceImage.src= choice.image;
+choiceImage.alt =choice.text;
+choiceButton.appendChild(choiceImage);
+choiceButton.append(choice.text);
 
 function restartGame() {
 
