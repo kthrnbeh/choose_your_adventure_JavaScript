@@ -50,7 +50,7 @@ function displayScene(character){
     character.choices.forEach(function(choice) {
         const choiceButton = document.createElement('button');
         const snowManButton=document.getElementById("snowman");
-        
+
         const choiceImage =document.createElement("img");
             choiceImage.src= choice.image;
             choiceImage.alt =choice.text;
@@ -292,7 +292,7 @@ const scenes = {
             },
             {
                 text:"Sing baby to sleep",
-                image:"images/",
+                image:"images/song.png",
                 nextScene:"snowmanSong"
             },
          ]
@@ -317,12 +317,12 @@ const scenes = {
          choices: [
             {
                 text:"She gives you a magic scarf!",
-                image:"images/",
+                image:"images/scarf_blue.png",
                 nextScene:"magicScarf"
             },
             {
                 text:"Time to headhome.",
-                image:"images/",
+                image:"images/reunited.png",
                 nextScene:"Return"
             },
          ]
@@ -332,12 +332,12 @@ const scenes = {
     choices: [
         {
             text:"Follow the glowing petals",
-            image:"images/",
+            image:"images/glow.png",
             nextScene:"flowerPath"
         },
         {
             text:"Search the old fountain",
-            image:"images/",
+            image:"images/fountain.png",
             nextScene:"gardenFountain"
         },
     ]
@@ -348,12 +348,12 @@ flowerPath: {
     choices: [
         {
             text:"Ask the creature what happened",
-            image:"images/",
+            image:"images/hide.png",
             nextScene:"littleCreature"
         },
         {
             text:"Follow the petals farther",
-            image:"images/",
+            image:"images/notflower.png",
             nextScene:"littleCreature"
         },
     ]
@@ -364,12 +364,12 @@ gardenFountain: {
     choices: [
         {
             text:"Take the seed carefully",
-            image:"images/",
+            image:"images/careful.png",
             nextScene:"littleCreature"
         },
         {
             text:"Use her magic to lift it",
-            image:"images/",
+            image:"images/seed.png",
             nextScene:"littleCreature"
         },
     ]
@@ -380,12 +380,12 @@ littleCreature: {
     choices: [
         {
             text:"Share the garden's magic",
-            image:"images/",
+            image:"images/creature.png/",
             nextScene:"shareMagic"
         },
         {
             text:"Invite the creature to the castle",
-            image:"images/",
+            image:"images/castle.png",
             nextScene:"makeFriend"
         },
     ]
@@ -396,12 +396,12 @@ shareMagic: {
     choices: [
         {
             text:"Water the seed",
-            image:"images/",
+            image:"images/plant.png",
             nextScene:"gardenBloom"
         },
         {
             text:"Sing a happy song",
-            image:"images/",
+            image:"images/sing.png",
             nextScene:"gardenBloom"
         },
     ]
@@ -412,12 +412,12 @@ makeFriend: {
     choices: [
         {
             text:"Plant flowers together",
-            image:"images/",
+            image:"images/plant_flower.png",
             nextScene:"gardenBloom"
         },
         {
             text:"Show the creature the castle",
-            image:"images/",
+            image:"images/castle_look.png",
             nextScene:"gardenBloom"
         },
     ]
