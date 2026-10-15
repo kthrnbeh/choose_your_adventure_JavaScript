@@ -30,12 +30,7 @@ const character_two ={
 const heading =document.getElementById("character_choice");
 const choicesContainer = document.getElementById("choices");
 const PopcornTreeButton = document.getElementById("tree");
-const snowManButton=document.getElementById("snowman");
-const choiceImage =document.createElement("img");
-choiceImage.src= choice.image;
-choiceImage.alt =choice.text;
-choiceButton.appendChild(choiceImage);
-choiceButton.append(choice.text);
+
 
 function restartGame() {
 
@@ -54,7 +49,13 @@ function displayScene(character){
 
     character.choices.forEach(function(choice) {
         const choiceButton = document.createElement('button');
-        choiceButton.textContent=choice.text;
+        const snowManButton=document.getElementById("snowman");
+        
+        const choiceImage =document.createElement("img");
+            choiceImage.src= choice.image;
+            choiceImage.alt =choice.text;
+            choiceButton.appendChild(choiceImage);
+            choiceButton.append(choice.text);
         choicesContainer.appendChild(choiceButton);
         choiceButton.addEventListener("click", function() {
             if (choice.nextScene === "Return") {
@@ -301,12 +302,12 @@ const scenes = {
          choices: [
             {
                 text:"Follow the footsteps!",
-                image:"images/",
+                image:"images/path.png",
                 nextScene:"Footsteps"
             },
             {
                 text:"Give up.",
-                image:"images/",
+                image:"images/give_up.png",
                 nextScene:"Return"
             },
          ]
