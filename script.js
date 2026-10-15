@@ -256,7 +256,7 @@ const scenes = {
          choices: [
             {
                 text:"Become a princess.",
-                image:"images/",
+                image:"images/princess_choice.png",
                 nextScene:"Princess"
             },
             {
@@ -271,7 +271,7 @@ const scenes = {
          choices: [
             {
                 text:"You find a baby dragon.",
-                image:"images/",
+                image:"images/baby_dragon.png",
                 nextScene:"Baby"
             },
             {
