@@ -197,7 +197,7 @@ const scenes = {
          choices: [
             {
                 text:"Popcorn popping on the apricot tree.",
-                image:"images/look.png",
+                image:"images/looking.png",
                 nextScene: "Surprise"
             },
              {
@@ -381,7 +381,7 @@ littleCreature: {
     choices: [
         {
             text:"Share the garden's magic",
-            image:"images/creature.png/",
+            image:"images/creature.png",
             nextScene:"shareMagic"
         },
         {
@@ -490,7 +490,7 @@ StandUp:{
     choices: [
         {
             text:"Help remove the thorn",
-            image:"images/",
+            image:"images/thorn.png",
             nextScene:"HelpDragon"
         },
         {
@@ -505,7 +505,7 @@ TalkDragon:{
     choices: [
         {
             text:"Help the dragon",
-            image:"images/",
+            image:"images/help_dragon1.png",
             nextScene:"HelpDragon"
         },
         {
@@ -526,7 +526,7 @@ HelpDragon:{
         },
         {
             text:"Give the dragon food",
-            image:"images/food",
+            image:"images/food.png",
             nextScene:"LeadDragon"
         },
     ]
