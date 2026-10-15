@@ -35,39 +35,29 @@ const snowManButton = document.getElementById("snowman");
 
 function restartGame() {
 
-     heading.textContent ="Let the adventure begin!";
+    heading.textContent = "Let the adventure begin!";
     choicesContainer.innerHTML = "";
 
-    choicesContainer.appendChild(PopcornTreeButton)
-    choicesContainer.appendChild(snowManButton)
-
+    choicesContainer.appendChild(PopcornTreeButton);
+    choicesContainer.appendChild(snowManButton);
 }
 
 
-function displayScene(character){
-    heading.textContent = character.story
+function displayScene(character) {
+    heading.textContent = character.story;
     choicesContainer.innerHTML = "";
 
     character.choices.forEach(function(choice) {
-        const choiceButton = document.createElement('button');{
-            if (choice.image && choice.image !== "images/") {
-    const choiceImage = document.createElement("img");
+        const choiceButton = document.createElement("button");
 
-    choiceImage.src = choice.image;
-    choiceImage.alt = choice.text;
-
-    choiceButton.appendChild(choiceImage);
-}
-
-    choiceButton.append(choice.text);
-        }
-       
-
-        const choiceImage =document.createElement("img");
-            choiceImage.src= choice.image;
-            choiceImage.alt =choice.text;
+        if (choice.image && choice.image !== "images/") {
+            const choiceImage = document.createElement("img");
+            choiceImage.src = choice.image;
+            choiceImage.alt = choice.text;
             choiceButton.appendChild(choiceImage);
-            choiceButton.append(choice.text);
+        }
+
+        choiceButton.append(choice.text);
         choicesContainer.appendChild(choiceButton);
         choiceButton.addEventListener("click", function() {
             if (choice.nextScene === "Return") {
@@ -76,21 +66,15 @@ function displayScene(character){
                 displayScene(scenes[choice.nextScene]);
             }
 
-        }); 
+        });
+    });
+}
 
-    }); 
-
-} 
-        
-
-   
 snowManButton.addEventListener("click", function() {
     displayScene(character_one);
- 
 });
 PopcornTreeButton.addEventListener("click", function() {
     displayScene(character_two);
-    
 });
 const scenes = {
     snowMan: character_one,
