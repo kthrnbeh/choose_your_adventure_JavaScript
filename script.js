@@ -1,6 +1,6 @@
 
 const character_one ={
-    name: "SnowMan",
+    name: "Snowman",
     color: "white",
     season:"winter",
     story:"Once there was a snowman...",
@@ -13,7 +13,7 @@ const character_one ={
     ]
 }
 const character_two ={
-    name: "PopcornTree",
+    name: "Popcorn Tree",
     color:"brown",
     season:"spring",
     story:"You look out your window...",
@@ -96,7 +96,7 @@ const scenes = {
         ]
     },
     Dance:{
-        story:"The snowman jolly and bright dances!",
+        story:"The snowman dances, jolly and bright!",
          choices: [
             {
                 text:"He does a flip.",
@@ -112,7 +112,7 @@ const scenes = {
 
     },
     Flip:{
-        story:"Cool Flip Snowman!",
+        story:"The snowman did a cool flip!",
          choices: [
             {
                 text:"He's tired now.",
@@ -124,7 +124,7 @@ const scenes = {
 
     },
     snowmanSong:{
-        story:"Once there was a snow man!",
+        story:"Once there was a snowman!",
          choices: [
             {
                 text:"He was tall, tall, tall!",
@@ -145,7 +145,7 @@ const scenes = {
             story:"Then the sun came out!",
             choices: [
             {
-                text:"in the sun he melted!",
+                text:"In the sun, he melted!",
                 image:"images/supersmall.png",
                 nextScene:"Melted"
             },
@@ -159,10 +159,10 @@ const scenes = {
         ]
     },
     Melted: {
-            story:"After He melted!",
+        story:"After he melted, the snowman became smaller and smaller.",
             choices: [
             {
-                text:"he became small, small small!",
+                text:"He became small, small, small!",
                 image:"images/small.png",
                 nextScene:"Return"
             },
@@ -177,7 +177,7 @@ const scenes = {
 
     },
     Adventure:{
-        story:"Cool Flip Snowman!",
+        story:"The snowman did a cool flip!",
          choices: [
             {
                 text:"He's tired now.",
@@ -204,7 +204,7 @@ const scenes = {
         ]
     },
    Surprise:{
-        story:"Spring has brought me such a nice suprise!",
+        story:"Spring has brought me such a nice surprise!",
          choices: [
             {
                 text:"Popcorn popping right before my eyes.",
@@ -237,10 +237,10 @@ const scenes = {
 
     },
     Notso:{
-        story:"it wasn't really so but it seemed to me!",
+        story:"It wasn't really so, but it seemed that way to me!",
          choices: [
             {
-                text:"A popcorn ball on the Apricot tree.",
+                text:"A popcorn ball on the apricot tree.",
                 image:"images/popcorn.png",
                 nextScene:"Return"
             },
@@ -257,7 +257,7 @@ const scenes = {
                 nextScene:"Princess"
             },
             {
-                text:"Become a Knight.",
+                text:"Become a knight.",
                 image:"images/knight.png",
                 nextScene:"Knight"
             },
@@ -267,7 +267,7 @@ const scenes = {
         story:"The tree was cool and inspired my imagination!",
          choices: [
             {
-                text:"You find a baby dragon.",
+                text:"Find a baby dragon.",
                 image:"images/baby_dragon.png",
                 nextScene:"Baby"
             },
@@ -287,14 +287,14 @@ const scenes = {
                 nextScene:"Mom"
             },
             {
-                text:"Sing baby to sleep",
+                text:"Sing the baby to sleep.",
                 image:"images/song.png",
                 nextScene:"snowmanSong"
             },
          ]
         },
         Mom:{
-        story:"See glowing footsteps that look like dragons",
+        story:"You see glowing footsteps that look like dragon tracks.",
          choices: [
             {
                 text:"Follow the footsteps!",
@@ -309,7 +309,7 @@ const scenes = {
          ]
         },
         Footsteps:{
-        story:"You did it! You found mom she is really grateful.",
+        story:"You did it! You found Mom, and she is really grateful.",
          choices: [
             {
                 text:"She gives you a magic scarf!",
@@ -317,7 +317,7 @@ const scenes = {
                 nextScene:"magicScarf"
             },
             {
-                text:"Time to headhome.",
+                text:"Time to head home.",
                 image:"images/reunited.png",
                 nextScene:"Return"
             },
@@ -327,12 +327,12 @@ const scenes = {
     story:"The princess discovers that all the flowers in the royal garden have disappeared!",
     choices: [
         {
-            text:"Follow the glowing petals",
+            text:"Follow the glowing petals.",
             image:"images/glow.png",
             nextScene:"flowerPath"
         },
         {
-            text:"Search the old fountain",
+            text:"Search the old fountain.",
             image:"images/fountain.png",
             nextScene:"gardenFountain"
         },
@@ -343,12 +343,12 @@ flowerPath: {
     story:"The princess follows the glowing petals into the forest and finds a tiny creature hiding behind a tree.",
     choices: [
         {
-            text:"Ask the creature what happened",
+            text:"Ask the creature what happened.",
             image:"images/hide.png",
             nextScene:"littleCreature"
         },
         {
-            text:"Follow the petals farther",
+            text:"Follow the petals farther.",
             image:"images/notflower.png",
             nextScene:"littleCreature"
         },
@@ -359,12 +359,12 @@ gardenFountain: {
     story:"Inside the old fountain, the princess finds a magical seed glowing beneath the water.",
     choices: [
         {
-            text:"Take the seed carefully",
+            text:"Take the seed carefully.",
             image:"images/careful.png",
             nextScene:"littleCreature"
         },
         {
-            text:"Use her magic to lift it",
+            text:"Use her magic to lift it.",
             image:"images/seed.png",
             nextScene:"littleCreature"
         },
@@ -375,12 +375,12 @@ littleCreature: {
     story:"The creature explains that it took the garden's magic because it wanted flowers for its lonely home.",
     choices: [
         {
-            text:"Share the garden's magic",
+            text:"Share the garden's magic.",
             image:"images/creature.png",
             nextScene:"shareMagic"
         },
         {
-            text:"Invite the creature to the castle",
+            text:"Invite the creature to the castle.",
             image:"images/castle.png",
             nextScene:"makeFriend"
         },
@@ -391,12 +391,12 @@ shareMagic: {
     story:"The princess shares the magical seed with the creature. Together, they plant it in the forest.",
     choices: [
         {
-            text:"Water the seed",
+            text:"Water the seed.",
             image:"images/plant.png",
             nextScene:"gardenBloom"
         },
         {
-            text:"Sing a happy song",
+            text:"Sing a happy song.",
             image:"images/sing.png",
             nextScene:"gardenBloom"
         },
@@ -407,12 +407,12 @@ makeFriend: {
     story:"The princess invites the creature to live in the royal garden, where it will never be lonely again.",
     choices: [
         {
-            text:"Plant flowers together",
+            text:"Plant flowers together.",
             image:"images/plant_flower.png",
             nextScene:"gardenBloom"
         },
         {
-            text:"Show the creature the castle",
+            text:"Show the creature the castle.",
             image:"images/castle_look.png",
             nextScene:"gardenBloom"
         },
@@ -423,12 +423,12 @@ gardenBloom: {
     story:"The magical flowers bloom again, and the princess has made a new friend!",
     choices: [
         {
-            text:"Celebrate in the garden",
+            text:"Celebrate in the garden.",
             image:"images/celebrate.png",
             nextScene:"princessEnding"
         },
         {
-            text:"Give the creature a flower crown",
+            text:"Give the creature a flower crown.",
             image:"images/crown.png",
             nextScene:"princessEnding"
         },
@@ -439,11 +439,11 @@ princessEnding: {
     story:"The princess learns that kindness can make even the saddest garden bloom.",
     choices: [
         {
-            text:"Play again",
+            text:"Play again.",
             nextScene:"Return"
         },
         {
-            text:"Choose another adventure",
+            text:"Choose another adventure.",
             nextScene:"Return"
         },
     ]
@@ -452,12 +452,12 @@ Knight:{
     story:"The knight hears an angry dragon roaring near the castle!",
     choices: [
         {
-            text:"Raise the shield",
+            text:"Raise the shield.",
             image:"images/block.png",
             nextScene:"Shield"
         },
         {
-            text:"Talk to the dragon",
+            text:"Talk to the dragon.",
             image:"images/angry_dragon.png",
             nextScene:"TalkDragon"
         },
@@ -468,12 +468,12 @@ Shield:{
     story:"The dragon knocks the knight down with a powerful gust of wind!",
     choices: [
         {
-            text:"Stand up bravely",
+            text:"Stand up bravely.",
             image:"images/dragon_blow.png",
             nextScene:"StandUp"
         },
         {
-            text:"Run back to the castle",
+            text:"Run back to the castle.",
             image:"images/run.png",
             nextScene:"Return"
         },
@@ -484,12 +484,12 @@ StandUp:{
     story:"The knight stands up and notices that the dragon has a thorn stuck in its wing.",
     choices: [
         {
-            text:"Help remove the thorn",
+            text:"Help remove the thorn.",
             image:"images/thorn.png",
             nextScene:"HelpDragon"
         },
         {
-            text:"Use the shield again",
+            text:"Use the shield again.",
             nextScene:"Return"
         },
     ]
@@ -499,12 +499,12 @@ TalkDragon:{
     story:"The knight speaks calmly to the dragon and discovers that the dragon is hurt.",
     choices: [
         {
-            text:"Help the dragon",
+            text:"Help the dragon.",
             image:"images/help_dragon1.png",
             nextScene:"HelpDragon"
         },
         {
-            text:"Leave the dragon alone",
+            text:"Leave the dragon alone.",
             image:"images/run.png",
             nextScene:"Return"
         },
@@ -515,12 +515,12 @@ HelpDragon:{
     story:"The knight carefully removes the thorn from the dragon's wing.",
     choices: [
         {
-            text:"Lead the dragon home",
+            text:"Lead the dragon home.",
             image:"images/help_dragon1.png",
             nextScene:"LeadDragon"
         },
         {
-            text:"Give the dragon food",
+            text:"Give the dragon food.",
             image:"images/food.png",
             nextScene:"LeadDragon"
         },
@@ -531,12 +531,12 @@ LeadDragon:{
     story:"The dragon is no longer angry. The knight leads the dragon safely back to its family.",
     choices: [
         {
-            text:"Celebrate with the dragons",
+            text:"Celebrate with the dragons.",
             image:"images/dragon_celebrate.png",
             nextScene:"KnightEnding"
         },
         {
-            text:"Return to the castle",
+            text:"Return to the castle.",
             image:"images/last.png",
             nextScene:"KnightEnding"
         },
@@ -547,11 +547,11 @@ KnightEnding:{
     story:"The knight learns that courage is not only fighting. Sometimes courage means helping someone who is afraid or hurt.",
     choices: [
         {
-            text:"Play again",
+            text:"Play again.",
             nextScene:"Return"
         },
         {
-            text:"Choose another adventure",
+            text:"Choose another adventure.",
             nextScene:"Return"
         },
     ]
