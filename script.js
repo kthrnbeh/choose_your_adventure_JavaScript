@@ -6,7 +6,7 @@ const character_one ={
     story:"Once there was a snowman...",
     choices: [
         { text:"Follow the song! 🎵🎵",
-            nextScene: "snowManSong"
+            nextScene: "snowmanSong"
         }, {text:"Give him a magic scarf!☃️",
             nextScene:"magicScarf"
         }
