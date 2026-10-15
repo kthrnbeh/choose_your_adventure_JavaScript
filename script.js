@@ -90,15 +90,6 @@ PopcornTreeButton.addEventListener("click", function() {
     displayScene(character_two);
     
 });
-//let currentScene="start";
-
-//const story ={}
-
-
-
-
-    
-//holds all the story lines 
 // Store all adventure scenes in one place.
 const scenes = {
     snowMan: character_one,
@@ -208,8 +199,9 @@ const scenes = {
                 nextScene:"gotoRoom"//end of choices return to start
             },
            
-        ],
-        Suprise:{
+        ]
+    },
+    Suprise:{
         story:"Spring has brought me such a nice suprise!",
          choices: [
             // The two choices for this scene go here.
