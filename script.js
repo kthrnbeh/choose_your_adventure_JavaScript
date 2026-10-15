@@ -31,44 +31,29 @@ const heading =document.getElementById("character_choice");
 const choicesContainer = document.getElementById("choices");
 const PopcornTreeButton = document.getElementById("tree");
 const snowManButton=document.getElementById("snowman");
-// Restart the game and return to character selection.
 function restartGame() {
 
-    // Change the question back to "Pick your Character".
      heading.textContent ="Let the adventure begin!";
-    // Remove the current adventure choice buttons.
     choicesContainer.innerHTML = "";
 
-    // Put the Popcorn Tree button back on the webpage.
     choicesContainer.appendChild(PopcornTreeButton)
-    // Put the Snowman button back on the webpage.
     choicesContainer.appendChild(snowManButton)
 
 }
 
 
 function displayScene(character){
-    // Display the story belonging to the character received.
     heading.textContent = character.story
-    // Remove the previous choices.
     choicesContainer.innerHTML = "";
 
-    // Go through each choice in the selected character.
-   
     character.choices.forEach(function(choice) {
-        // Create a new button.
-
         const choiceButton = document.createElement('button');
-    // Give the button the text stored in choice.
         choiceButton.textContent=choice.text;
         choicesContainer.appendChild(choiceButton);
-                // Listen for the player to click a choice.
         choiceButton.addEventListener("click", function() {
             if (choice.nextScene === "Return") {
-                // We will call restartGame() here.
                 return restartGame();
             } else {
-                // Display the next adventure scene.
                 displayScene(scenes[choice.nextScene]);
             }
 
@@ -81,16 +66,13 @@ function displayScene(character){
 
    
 snowManButton.addEventListener("click", function() {
-    // Change the heading to the Snowman's story
     displayScene(character_one);
  
 });
 PopcornTreeButton.addEventListener("click", function() {
-    // Change the heading to the popcorn tree story
     displayScene(character_two);
     
 });
-// Store all adventure scenes in one place.
 const scenes = {
     snowMan: character_one,
     popcornTree: character_two,
@@ -98,7 +80,6 @@ const scenes = {
     magicScarf: {
         story: "As the snowman received the blue scarf, magic came upon him.",
         choices: [
-            // The two choices for this scene go here.
             {
                 text:"The snowman begins to dance.",
                 nextScene:"Dance"
@@ -112,14 +93,13 @@ const scenes = {
     Dance:{
         story:"The snowman jolly and bright dances!",
          choices: [
-            // The two choices for this scene go here.
             {
                 text:"He does a flip.",
                 nextScene:"Flip"
             },
             {
                 text:"He is done.",
-                nextScene:"Return"//restart the game
+                nextScene:"Return"
             }
         ]
 
@@ -127,10 +107,9 @@ const scenes = {
     Flip:{
         story:"Cool Flip Snowman!",
          choices: [
-            // The two choices for this scene go here.
             {
                 text:"He's tired now.",
-                nextScene:"Return"//end of choices return to start
+                nextScene:"Return"
             },
            
         ]
@@ -139,14 +118,13 @@ const scenes = {
     snowmanSong:{
         story:"Once there was a snow man!",
          choices: [
-            // The two choices for this scene go here.
             {
                 text:"He was tall, tall, tall!",
-                nextScene:"Small"//end of choices return to start
+                nextScene:"Small"
             },
             {
                 text:"He wanted adventure!",
-                nextScene:"Adventure"//end of choices return to start
+                nextScene:"Adventure"
             },
 
            
@@ -156,14 +134,13 @@ const scenes = {
     Small: {
             story:"Then the sun came out!",
             choices: [
-            // The two choices for this scene go here.
             {
                 text:"in the sun he melted!",
-                nextScene:"Melted"//end of choices return to start
+                nextScene:"Melted"
             },
             {
                 text:"He wanted adventure!",
-                nextScene:"Adventure"//end of choices return to start
+                nextScene:"Adventure"
             },
 
            
@@ -172,14 +149,13 @@ const scenes = {
     Melted: {
             story:"After He melted!",
             choices: [
-            // The two choices for this scene go here.
             {
                 text:"he became small, small small!",
-                nextScene:"Return"//end of choices return to start
+                nextScene:"Return"
             },
             {
                 text:"Oh No, no more snowman!",
-                nextScene:"Return"//end of choices return to start
+                nextScene:"Return"
             },
 
            
@@ -189,29 +165,27 @@ const scenes = {
     PopcornSong:{
         story:"I looked out the window and what did I see!",
          choices: [
-            // The two choices for this scene go here.
             {
                 text:"Popcorn popping on the apricot tree.",
-                nextScene:"Suprise"//end of choices return to start
+                nextScene: "Surprise"
             },
              {
                 text:"A beautiful tree but I'm done looking now.",
-                nextScene:"gotoRoom"//end of choices return to start
+                nextScene:"gotoRoom"
             },
            
         ]
     },
-    Suprise:{
+   Surprise:{
         story:"Spring has brought me such a nice suprise!",
          choices: [
-            // The two choices for this scene go here.
             {
                 text:"Popcorn popping right before my eyes.",
-                nextScene:"Handful"//end of choices return to start
+                nextScene:"Handful"
             },
              {
                 text:"Not interested.",
-                nextScene:"Return"//end of choices return to start
+                nextScene:"Return"
             },
            
         ],
@@ -219,14 +193,13 @@ const scenes = {
         Handful:{
         story:"I can take a handful that smells so sweet!",
          choices: [
-            // The two choices for this scene go here.
             {
                 text:"A popcorn ball that would smell so sweet.",
-                nextScene:"Notso"//end of choices return to start
+                nextScene:"Notso"
             },
              {
                 text:"Not interested.",
-                nextScene:"Return"//end of choices return to start
+                nextScene:"Return"
             },
            
         ],
@@ -235,32 +208,46 @@ const scenes = {
     Notso:{
         story:"it wasn't really so but it seemed to me!",
          choices: [
-            // The two choices for this scene go here.
             {
                 text:"A popcorn ball on the Apricot tree.",
-                nextScene:"Return"//end of choices return to start
+                nextScene:"Return"
             },
            
         ],
 
     },
     gotoRoom:{
-        story:"Cool Flip Snowman!",
+        story:"The tree was cool and inspired my imagination!",
          choices: [
-            // The two choices for this scene go here.
             {
-                text:"He's tired now.",
-                nextScene:"Return"//end of choices return to start
+                text:"Become a princess.",
+                nextScene:"Princess"
+            },
+            {
+                text:"Become a Knight.",
+                nextScene:"Knight"
+            },
+         ]
+        },
+        Princess:{
+        story:"The tree was cool and inspired my imagination!",
+         choices: [
+            {
+                text:"You find a baby dragon.",
+                nextScene:"Baby"
+            },
+            {
+                text:"Become a Knight.",
+                nextScene:"Knight"
             },
          ]
         },
     Adventure:{
         story:"Cool Flip Snowman!",
          choices: [
-            // The two choices for this scene go here.
             {
                 text:"He's tired now.",
-                nextScene:"Return"//end of choices return to start
+                nextScene:"Return"
             },
          ]
         },
