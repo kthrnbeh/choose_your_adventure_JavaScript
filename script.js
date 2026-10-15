@@ -30,6 +30,7 @@ const character_two ={
 const heading =document.getElementById("character_choice");
 const choicesContainer = document.getElementById("choices");
 const PopcornTreeButton = document.getElementById("tree");
+const snowManButton = document.getElementById("snowman");
 
 
 function restartGame() {
