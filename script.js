@@ -50,7 +50,7 @@ function displayScene(character){
 
     character.choices.forEach(function(choice) {
         const choiceButton = document.createElement('button');
-        const snowManButton=document.getElementById("snowman");
+       
 
         const choiceImage =document.createElement("img");
             choiceImage.src= choice.image;
