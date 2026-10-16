@@ -175,7 +175,7 @@ const scenes = {
         ]
     },
     Melted: {
-        story:"After he melted, the snowman became smaller and smaller.",
+        story:"After he melted...",
             choices: [
             {
                 text:"He became small, small, small!",
@@ -457,13 +457,10 @@ princessEnding: {
     story:"The princess learns that kindness can make even the saddest garden bloom.",
     choices: [
         {
-            text:"Play again.",
+            text:"The End.",
             nextScene:"Return"
         },
-        {
-            text:"Choose another adventure.",
-            nextScene:"Return"
-        },
+       
     ]
 },
 // Knight and dragon scenes begin here.
