@@ -1,5 +1,5 @@
 
-
+/* Give the page a colorful background and center the game on the screen. */
 body{
       background-color: rgb(173, 226, 241);
       margin:0;
@@ -21,12 +21,14 @@ body{
 
 
 h1{
+      /* Make the title area large enough to stand out above the game. */
       font-size: 36px;
       text-align: center;
       margin:20px;
 
 }
 #character_choice {
+    /* Style the story text so it is easy for the player to read. */
     font-size: 24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: azure;
@@ -45,11 +47,13 @@ img{
       padding: 10px;
 }
 .game-sign{
+      /* Keep the title image responsive so it fits smaller screens. */
       width: 500px;
       height:auto;
       max-width: 100%;
 }
 button{
+      /* Stack each button's image and text neatly together. */
       border-radius: 20px;
       font-size: 22px;
       display: flex;
@@ -59,6 +63,7 @@ button{
 }
 
 .choices{
+      /* Place the choice buttons next to each other and wrap them when needed. */
       display: flex;
       justify-content: center;
       gap:20px;
@@ -66,10 +71,11 @@ button{
       background-color: rgb(220, 245, 244);
       padding:10px;
       cursor:pointer;
-      gap:10px;
+      
 }
 
 
 button:hover {
+    /* Give the player feedback when the mouse is over a choice. */
     background-color: lightpink;
 }

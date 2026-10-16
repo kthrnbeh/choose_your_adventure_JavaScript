@@ -1,4 +1,4 @@
-
+// These objects hold the information for the two characters the player can choose.
 const character_one ={
     name: "SnowMan",
     color: "white",
@@ -27,6 +27,8 @@ const character_two ={
 
     ]
 }
+
+// These references connect the JavaScript to the parts of the HTML page that change during the game.
 const heading =document.getElementById("character_choice");
 const choicesContainer = document.getElementById("choices");
 const PopcornTreeButton = document.getElementById("tree");
@@ -34,6 +36,8 @@ const snowManButton = document.getElementById("snowman");
 
 
 function restartGame() {
+
+    // Show the opening message and remove the current story choices.
 
     heading.textContent = "Let the adventure begin!";
     choicesContainer.innerHTML = "";
@@ -44,13 +48,16 @@ function restartGame() {
 
 
 function displayScene(character) {
+    // Show the selected story and clear the buttons from the previous scene.
     heading.textContent = character.story;
     choicesContainer.innerHTML = "";
 
     character.choices.forEach(function(choice) {
+        // Create one button for each choice in the current scene.
         const choiceButton = document.createElement("button");
 
         if (choice.image && choice.image !== "images/") {
+            // Add the choice image when that choice has a valid image path.
             const choiceImage = document.createElement("img");
             choiceImage.src = choice.image;
             choiceImage.alt = choice.text;
@@ -60,9 +67,11 @@ function displayScene(character) {
         choiceButton.append(choice.text);
         choicesContainer.appendChild(choiceButton);
         choiceButton.addEventListener("click", function() {
+            // Return to the character choices when a scene ends.
             if (choice.nextScene === "Return") {
                 return restartGame();
             } else {
+                // Otherwise, move to the scene named by the selected choice.
                 displayScene(scenes[choice.nextScene]);
             }
 
@@ -70,16 +79,23 @@ function displayScene(character) {
     });
 }
 
+// Start the adventure when the player chooses the Snowman.
 snowManButton.addEventListener("click", function() {
     displayScene(character_one);
 });
+
+// Start the adventure when the player chooses the Popcorn Tree.
 PopcornTreeButton.addEventListener("click", function() {
     displayScene(character_two);
 });
+
+// This object stores every story scene so choices can move between them.
 const scenes = {
+    // These are the two starting scenes connected to the character buttons.
     snowMan: character_one,
     popcornTree: character_two,
 
+    // Snowman scenes begin here.
     magicScarf: {
         story: "As the snowman received the blue scarf, magic came upon him.",
         choices: [
@@ -187,6 +203,7 @@ const scenes = {
          ]
         },
 
+    // Popcorn Tree scenes begin here.
     PopcornSong:{
         story:"I looked out the window and what did I see!",
          choices: [
@@ -323,7 +340,8 @@ const scenes = {
             },
          ]
         },
-        princessGarden: {
+    // Princess garden scenes begin here.
+    princessGarden: {
     story:"The princess discovers that all the flowers in the royal garden have disappeared!",
     choices: [
         {
@@ -448,6 +466,7 @@ princessEnding: {
         },
     ]
 },
+// Knight and dragon scenes begin here.
 Knight:{
     story:"The knight hears an angry dragon roaring near the castle!",
     choices: [
