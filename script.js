@@ -246,7 +246,7 @@ const scenes = {
         ],
     },
         Handful:{
-        story:"I can take a handful that smells so sweet!",
+        story:"I can take a handful...",
          choices: [
             {
                 text:"A popcorn ball that would smell so sweet.",
