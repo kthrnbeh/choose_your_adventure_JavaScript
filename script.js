@@ -72,7 +72,11 @@ function displayScene(character) {
                 return restartGame();
             } else {
                 // Otherwise, move to the scene named by the selected choice.
-                displayScene(scenes[choice.nextScene]);
+                try{
+                    displayScene(scenes[choice.nextScene]);
+                } catch(error){
+                    heading
+                }
             }
 
         });
