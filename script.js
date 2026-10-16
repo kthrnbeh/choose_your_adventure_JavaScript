@@ -563,13 +563,10 @@ KnightEnding:{
     story:"The knight learns that courage is not only fighting. Sometimes courage means helping someone who is afraid or hurt.",
     choices: [
         {
-            text:"Play again.",
+            text:"The End.",
             nextScene:"Return"
         },
-        {
-            text:"Choose another adventure.",
-            nextScene:"Return"
-        },
+       
     ]
 },
 };
