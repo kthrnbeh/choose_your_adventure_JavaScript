@@ -1,32 +1,38 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+Welcome to my choose-your-own-adventure text game in JavaScript. For this browser-based program, I chose characters and stories inspired by two LDS Primary songs: “Once I Was a Snowman” and “Popcorn Popping.” Additionally, the player can choose to forgo the songs and make other distinct choices, such as going on an adventure as a knight or princess. The game then displays the story text and pictures.
 
-{Provide a description of the software that you wrote to demonstrate the JavaScript language.}
+Since I am a nursery leader in my church calling and the children inspire me every Sunday, I know they love singing time. I wanted to make something that they could play. It is a simple text game, so when a button is pushed, it takes the player to the next choice in the adventure. I also included pictures to engage them and because some of them cannot read yet.
 
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](PASTE-YOUR-YOUTUBE-LINK-HERE)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+I used the following tools to develop my project:
 
-{Describe the programming language that you used and any libraries.}
+- Visual Studio Code
+- Google Chrome
+- Live Server
+- GitHub
+- GitHub Pages
+
+## Programming Languages
+
+- HTML
+- CSS
+- JavaScript
+
+I did not use any outside JavaScript libraries.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
-- [Web Site Name](https://github.com/kevin578/text-based-adventure-video/blob/main/main.js)
-- [Web Site Name](https://www.youtube.com/watch?v=R1S_NhKkvGA)
+- [GitHub](https://github.com/kevin578/text-based-adventure-video/blob/main/main.js)
+- [YouTube](https://www.youtube.com/watch?v=R1S_NhKkvGA)
+- [ChatGPT](https://chatgpt.com/g/g-p-6ac3c90ebbf08191929f320addd8888c-choose-your-own-adventure)
+- [YouTube](https://youtu.be/PFmuCDHHpwk?si=vaSqyhBV2BMo8svx)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+- Add sound effects when a button is clicked.
+- Improve accessibility for people with hearing impairments.
+- Make the game work on multiple types of devices.
