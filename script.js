@@ -75,7 +75,8 @@ function displayScene(character) {
                 try{
                     displayScene(scenes[choice.nextScene]);
                 } catch(error){
-                    heading.textContent = "Sorry this scene could not be loaded.";
+                    heading.textContent = "Sorry, this scene could not be loaded.";
+                    console.error(error);
                 }
             }
 
