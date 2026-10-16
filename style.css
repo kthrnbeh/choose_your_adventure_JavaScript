@@ -1,8 +1,5 @@
-/* 1. Style the entire page
-      - Choose a blue background color
-      - Set the font
-      - Center the game on the page
-*/
+
+
 body{
       background-color: rgb(173, 226, 241);
       margin:0;
@@ -11,11 +8,8 @@ body{
       min-height: 100vh;
 }
 
-/* 2. Style the main game container
-      - Set a maximum width
-      - Add spacing
-      - Give the game a rounded bubble shape
-*/
+
+/* Keep the game content readable while allowing the white container to resize on smaller screens. */
 .adventure-container{
       max-width: 800px;
       margin:auto;
@@ -25,10 +19,7 @@ body{
       text-align: center;
 }
 
-/* 3. Style the heading
-      - Adjust the text size
-      - Center the title
-*/
+
 h1{
       font-size: 36px;
       text-align: center;
@@ -44,20 +35,14 @@ h1{
 
 }
 
-/* 4. Style the story text
-      - Make the text easy to read
-      - Put the story inside a rounded bubble
-*/
 
+/* Use the same size for character images so the two choices look balanced. */
 
-/* 5. Style the character images
-      - Make both pictures the same size
-      - Center the pictures
-*/
 img{
       width: 250px;
       height:250px;
       object-fit: cover;
+      padding: 10px;
 }
 .game-sign{
       width: 500px;
@@ -72,11 +57,7 @@ button{
       align-items: center;
       background-color: rgb(196, 220, 255);
 }
-/* 6. Style the choice buttons
-      - Give buttons rounded corners
-      - Add spacing between buttons
-      - Center the buttons
-*/
+
 .choices{
       display: flex;
       justify-content: center;
@@ -88,13 +69,7 @@ button{
       gap:10px;
 }
 
-/* 7. Add a hover style
-      - Change the button color when the mouse moves over it
-*/
+
 button:hover {
     background-color: lightpink;
 }
-/* 8. Style the restart button
-      - Give it a rounded shape
-      - Make it easy to find
-*/
