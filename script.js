@@ -71,7 +71,7 @@ function displayScene(character) {
             if (choice.nextScene === "Return") {
                 return restartGame();
             } else {
-                // Otherwise, move to the scene named by the selected choice.
+                //error handling, otherwise it goes onto the next scene
                 try{
                     displayScene(scenes[choice.nextScene]);
                 } catch(error){
