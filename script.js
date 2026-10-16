@@ -222,7 +222,7 @@ const scenes = {
                 nextScene: "Surprise"
             },
              {
-                text:"A beautiful tree but I'm done looking now.",
+                text:"I'm done looking now.",
                 image:"images/turn_away.png",
                 nextScene:"gotoRoom"
             },
