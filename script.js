@@ -67,14 +67,17 @@ function displayScene(character) {
         choiceButton.append(choice.text);
         choicesContainer.appendChild(choiceButton);
         choiceButton.addEventListener("click", function() {
-            // Return to the character choices when a scene ends.
+            // Return to the character choices when a scene ends.//displayScene(scenes[choice.nextScene]);
             if (choice.nextScene === "Return") {
                 return restartGame();
             } else {
                 //error handling, otherwise it goes onto the next scene
                 try{
                     const nextScene =scenes[choice.nextScene]
-                    //displayScene(scenes[choice.nextScene]);
+                    if(!nextScene){
+                        throw new Error("The next scene could not be found.")
+                    }
+                    displayScene(nextScene);
                 } catch(error){
                     heading.textContent = "Sorry, this scene could not be loaded.";
                     console.error(error);
