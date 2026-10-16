@@ -337,7 +337,7 @@ const scenes = {
             nextScene:"gardenFountain"
         },
     ]
-}
+},
 
 flowerPath: {
     story:"The princess follows the glowing petals into the forest and finds a tiny creature hiding behind a tree.",
