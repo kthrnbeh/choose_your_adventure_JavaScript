@@ -4,7 +4,7 @@ Welcome to my choose-your-own-adventure text game in JavaScript. For this browse
 
 Since I am a nursery leader in my church calling and the children inspire me every Sunday, I know they love singing time. I wanted to make something that they could play. It is a simple text game, so when a button is pushed, it takes the player to the next choice in the adventure. I also included pictures to engage them and because some of them cannot read yet.
 
-[Software Demo Video](PASTE-YOUR-YOUTUBE-LINK-HERE)
+https://youtu.be/zFzMpeaQ3JY
 
 # Development Environment
 
