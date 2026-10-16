@@ -73,7 +73,8 @@ function displayScene(character) {
             } else {
                 //error handling, otherwise it goes onto the next scene
                 try{
-                    displayScene(scenes[choice.nextScene]);
+                    const nextScene =scenes[choice.nextScene]
+                    //displayScene(scenes[choice.nextScene]);
                 } catch(error){
                     heading.textContent = "Sorry, this scene could not be loaded.";
                     console.error(error);
